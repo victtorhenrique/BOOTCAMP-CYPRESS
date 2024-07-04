@@ -24,7 +24,7 @@ jobs:
         run: npm install cypress --save-dev
 
       - name: Run Cypress Tests
-        run: npm run cypress:run
+        run: npm run allure:report
 
       - name: Upload Allure Report
         uses: actions/upload-artifact@v3
