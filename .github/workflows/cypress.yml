@@ -25,3 +25,10 @@ jobs:
 
       - name: Run Cypress Tests
         run: npm run cypress:run
+
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: Allure
+          path: ${{ github.workspace }}/allure-report
