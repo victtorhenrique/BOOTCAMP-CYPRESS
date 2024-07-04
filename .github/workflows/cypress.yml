@@ -27,8 +27,30 @@ jobs:
         run: npm run allure:report
 
       - name: Upload Allure Report
-        uses: actions/upload-artifact@v3
-        if: always()
+        uses: actions/upload-artifact@v2
         with:
-          name: Allure
-          path: ${{ github.workspace }}/allure-report
+          name: allure-report
+          path: allure-report
+  
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Download Allure Report
+      uses: actions/download-artifact@v2
+      if: always()
+      with:
+        name: allure-report
+        path: allure-report
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: always()
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: ./allure-report
