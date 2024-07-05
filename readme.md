@@ -98,3 +98,8 @@ https://<seu-usuario>.github.io/<seu-repositorio>/
 ```
 
 Substitua <seu-usuario> pelo nome do seu usuário ou organização no GitHub, e <seu-repositorio> pelo nome do repositório.
+
+
+## Autor
+
+- [@victtorhenrique](https://github.com/victtorhenrique)
