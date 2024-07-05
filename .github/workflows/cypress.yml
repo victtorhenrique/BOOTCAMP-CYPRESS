@@ -3,7 +3,6 @@ name: Cypress Tests
 on:
   workflow_dispatch: # Pode ajustar os gatilhos conforme necessário
 
-
 jobs:
   test:
     runs-on: ubuntu-latest
