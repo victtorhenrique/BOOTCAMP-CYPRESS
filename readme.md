@@ -81,7 +81,8 @@ Na página do projeto no GitHub, vá para:
 - Clique em Salvar.
 
 ### 4. Configurar o Workflow do GitHub Actions
-Crie o arquivo .github/workflows/main.yml no repositório com o seguinte conteúdo:
+Crie o arquivo .github/workflows/main.yml no repositório;
+- Você podera acessar o arquivo ```cypress.yml``` e utilizar para construção da Worflow da automação.
 
 ### 5. Executar a Pipeline
 Cada vez que você fizer push para a branch main ou abrir um pull request para a branch main, a pipeline será executada automaticamente:
