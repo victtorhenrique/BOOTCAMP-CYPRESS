@@ -76,7 +76,7 @@ The requested URL returned error: 403
 Para corrigir isso, você precisa conceder permissões de gravação ao token.
 
 Na página do projeto no GitHub, vá para:
-- Configurações → Ações → Geral.
+- Settings → Actions → General.
 - Na seção Permissões do fluxo de trabalho , selecione a opção Permissões de leitura e gravação.
 - Clique em Salvar.
 
